@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Trae IDE
-.trae/
+# .trae/
