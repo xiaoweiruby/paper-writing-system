@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "medical-image-processing": {
+      "command": "python",
+      "args": ["-m", "medical_image_processing.server"],
+      "description": "医学图像处理，支持DICOM转换、窗宽窗位调整、图像分割等",
+      "env": {
+        "PYTHONPATH": "./medical_image_tools"
+      }
+    },
+    "data-preprocessing": {
+      "command": "python",
+      "args": ["-m", "data_preprocessing.server"],
+      "description": "数据预处理，支持数据清洗、增强、标准化和特征提取",
+      "env": {
+        "PYTHONPATH": "./data_tools"
+      }
+    }
+  }
+}

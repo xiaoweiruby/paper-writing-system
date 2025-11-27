@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "grammar-checker": {
+      "command": "python",
+      "args": ["-m", "grammar_checker.server"],
+      "description": "学术英语语法和表达优化，支持专业术语检查和句式改进",
+      "env": {
+        "PYTHONPATH": "./writing_tools"
+      }
+    },
+    "citation-manager": {
+      "command": "python",
+      "args": ["-m", "citation_manager.server"],
+      "description": "自动生成和格式化参考文献，支持多种引用格式（APA、MLA、IEEE等）",
+      "env": {
+        "PYTHONPATH": "./citation_tools"
+      }
+    }
+  }
+}
